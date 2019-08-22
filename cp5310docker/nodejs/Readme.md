@@ -2,21 +2,24 @@
 
 1. create your project folder
 2. initialize the node project:
-```
+
+```bash
 $ npm init
 ```
 This will guide your through the package.json creation
 
 3. create server.js - content is given in this repository.
 4. test your first nodejs application:
-```
+
+```bash
 $ node server.js
 ```
 Open your browser and hit localhost:3000. You should see a Hello worldmessage.
 
 
 5. install express to make better use of web and API
-```
+
+```bash
 $ npm install express --save
 ```
 
@@ -25,13 +28,13 @@ $ npm install express --save
 
 you can build the docker image by running:
 
-```
+```bash
 $ docker build . -t nodejs-rest
 ```
 
 Docker container is run with exposing port 3000 from the container to port 9000 on the host with the following command:
 
-```
+```bash
 $ docker run -e VERSION=1.1 -p 9000:3000 nodejs-rest
 ```
 
